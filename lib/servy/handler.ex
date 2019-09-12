@@ -23,6 +23,10 @@ defmodule Servy.Handler do
     route(conv, conv.method, conv.path)
   end
 
+  def route(conv, _method, path) do
+    %{ conv | resp_body: "No #{path} here"}
+  end
+
   def route(conv, "GET", "/wildthings") do
     %{ conv | resp_body: "Bears, Lions, Tigers" }
   end
