@@ -1,6 +1,6 @@
 # Servy
 
-**TODO: Add description**
+Servy is a server built in Elixir!
 
 ## Installation
 
